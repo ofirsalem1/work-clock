@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-
+import "./timer.css";
 const Timer = (props: any) => {
   const { initialMinute = 0, initialSeconds = 0 } = props;
   const [minutes, setMinutes] = useState(initialMinute);
@@ -24,13 +24,14 @@ const Timer = (props: any) => {
   });
 
   return (
-    <div>
-      {minutes === 0 && seconds === 0 ? null : (
-        <h1>
-          {" "}
-          {minutes}:{seconds < 10 ? `0${seconds}` : seconds}
-        </h1>
-      )}
+    <div className="timer-div">
+      <h1>
+        {minutes === 0 && seconds === 0
+          ? "00:00"
+          : `${minutes < 10 ? `0${minutes}` : minutes}:${
+              seconds < 10 ? `0${seconds}` : seconds
+            }`}
+      </h1>
     </div>
   );
 };

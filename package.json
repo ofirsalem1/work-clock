@@ -10,6 +10,8 @@
   },
   "dependencies": {
     "react": "^18.2.0",
+    "react-countdown-circle-timer": "^3.0.9",
+    "react-countdown-hook": "^1.1.1",
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
