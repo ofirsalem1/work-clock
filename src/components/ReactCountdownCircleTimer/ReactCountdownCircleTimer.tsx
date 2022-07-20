@@ -38,7 +38,7 @@ function ReactCountdownCircleTimer() {
     <div>
       <h1>ReactCountdownCircleTimer</h1>
       <div className="react-countdown-circle-timer-div">
-        <CountdownCircleTimer
+        {/* <CountdownCircleTimer
           {...timerProps}
           colors="#7E2E84"
           duration={daysDuration}
@@ -49,8 +49,8 @@ function ReactCountdownCircleTimer() {
               {renderTime("days", getTimeDays(daysDuration - elapsedTime))}
             </span>
           )}
-        </CountdownCircleTimer>
-        <CountdownCircleTimer
+        </CountdownCircleTimer> */}
+        {/* <CountdownCircleTimer
           {...timerProps}
           colors="#D14081"
           duration={daySeconds}
@@ -79,7 +79,7 @@ function ReactCountdownCircleTimer() {
               {renderTime("minutes", getTimeMinutes(hourSeconds - elapsedTime))}
             </span>
           )}
-        </CountdownCircleTimer>
+        </CountdownCircleTimer> */}
         <CountdownCircleTimer
           {...timerProps}
           colors="#218380"

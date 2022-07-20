@@ -6,9 +6,9 @@ function App() {
   return (
     <>
       <h1 className="title"> Work Clock </h1>
-      <Timer initialMinute={10} initialSeconds={2} />
+      {/* <Timer initialMinute={10} initialSeconds={2} /> */}
       <ReactCountdownHook />
-      <ReactCountdownCircleTimer />
+      {/* <ReactCountdownCircleTimer /> */}
     </>
   );
 }
